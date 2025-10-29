@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vinayaka Tiffins — Aha emi ruchi</title>
+  <link rel="stylesheet" href="vinayaka.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+        <div class="brand">
+            <div class="logo">
+                <img src="C:\Users\veera\OneDrive\Desktop\webpage\download.jpeg" alt="Vinayaka Tiffins Logo">
+            </div>
+
+        <div>
+          <h1>Vinayaka Tiffins</h1>
+          <p class="muted">aha emi ruchi</p>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <button class="nav-toggle" id="navToggle">Menu</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <nav>
+          <ul id="navList">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li> <a class="cta" href="#contact" class="cta">Order Now</a></li>
+          </ul>
+        </nav>
+       
+      </div>
+    </div>
+  </header>
+
+  <main class="container" id="home">
+    <section class="hero">
+      <div class="hero-card">
+        <h2>Traditional Flavours Every Morning — Vinayaka Tiffins</h2>
+        <p class="lead">Homemade breakfast, fresh ingredients, authentic taste.</p>
+        <div class="hero-actions">
+          <a class="order-btn" href="#contact" id="orderNow">Order Now</a>
+          <a class="muted" href="#menu">View Menu</a>
+        </div>
+
+        <div class="popular">
+          <div class="section-title">
+            <h3>Popular Menu</h3>
+            <small class="muted">Fresh & hot</small>
+          </div>
+
+          <div class="cards" id="menuCards"></div>
+        </div>
+      </div>
+
+      <aside class="hero-aside">
+        <div class="info">
+          <div class="row"><div class="badge">Open</div><div class="muted">6:30 AM — 11:30 AM (Daily)</div></div>
+          <div class="row"><strong>Address:</strong><div class="muted">Muncipal complex, near Bus stand, Mandapeta</div></div>
+          <div class="row"><strong>Phone:</strong><a class="tel" href="tel:9666393088">96663 93088</a></div>
+          <div class="row"><strong>Note:</strong><div class="muted">Tiffins, Breakfast, Mini Meals</div></div>
+        </div>
+
+        <div class="special center">
+          <div class="special-card center">
+            <div>
+              <strong>Special:</strong>
+              <div class="muted">Masala Dosa — ₹60 (approx)</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="menu" class="menu">
+      <div class="section-title">
+        <h3>Full Menu</h3>
+        <div class="muted">Traditional breakfast — homemade and warm</div>
+      </div>
+
+      <div class="gallery" id="gallery"></div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="section-title">
+        <h3>About Us</h3>
+        <div class="muted">Family-run, authentic recipes</div>
+      </div>
+      <div class="about-card">
+        <p class="muted">Vinayaka Tiffins serves homemade breakfast every morning using fresh local ingredients. Small family-run place — big on taste.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="flex">
+        <div class="left">
+          <h3>Contact / Order</h3>
+          <p class="muted">Call to order or use the form below — the form will open WhatsApp with your message.</p>
+
+          <form id="orderForm" class="order-form">
+            <label>Name</label>
+              <input 
+                id="name" 
+                type="text" 
+                placeholder="Your name" 
+                required
+                oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '');"
+              />
+
+
+            <label>Order </label>
+            <input id="order" type="text" placeholder="e.g. 2 Masala Dosa, 1 Idly" required>
+
+            <label>Phone</label>
+              <input 
+                id="phone" 
+                type="tel" 
+                placeholder="e.g. 9666393088" 
+                required
+                oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                maxlength="10"
+            />
+
+            <div class="form-actions">
+              <button type="submit" class="btn-primary">Send via WhatsApp</button>
+              <button type="button" id="callBtn" class="btn-outline">Call: 96663 93088</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="right">
+          <h4>Location</h4>
+          <div class="map center" title="Map placeholder">
+            <div style="text-align:center">
+              <strong>Muncipal complex</strong><br>
+              <small class="muted">near Bus stand, Mandapeta</small>
+            </div>
+          </div>
+
+          <div class="center map-links">
+            <a class="tel" href="tel:9666393088">Call: 96663 93088</a>
+            <div style="margin-top:8px">
+              <a href="https://www.google.com/maps/search/?api=1&query=Muncipal+complex+near+Bus+stand+Hyderabad" target="_blank" class="map-link">Open in Google Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © Vinayaka Tiffins — Muncipal complex, near Bus stand, Mandapeta • 96663 93088
+    </footer>
+  </main>
+
+  <script src="vinayaka.js"></script>
+</body>
+</html>
+<h2 class="fade-up">Traditional Flavours Every Morning — Vinayaka Tiffins</h2>
+<p class="lead fade-up">Homemade breakfast, fresh ingredients, authentic taste.</p>
+
+<div class="cards fade-up" id="menuCards"></div>
+<div class="gallery fade-up" id="gallery"></div>
